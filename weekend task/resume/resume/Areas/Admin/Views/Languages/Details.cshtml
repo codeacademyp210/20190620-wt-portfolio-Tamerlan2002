@@ -1,0 +1,42 @@
+﻿@model resume.Models.Languages
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Languages</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.English)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.English)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Spanish)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Spanish)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.French)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.French)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

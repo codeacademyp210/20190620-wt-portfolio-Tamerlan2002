@@ -1,0 +1,58 @@
+﻿@model resume.Models.EducationTables
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EducationTables</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Icon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Icon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Univeristy)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Univeristy)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Faculty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Faculty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartingYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartingYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FinishingYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FinishingYear)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
